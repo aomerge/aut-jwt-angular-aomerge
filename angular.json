@@ -27,7 +27,8 @@
               }
             ],
             "styles": [
-              "public/styles.css"
+              "public/styles.css",
+              "node_modules/@angular/material/prebuilt-themes/magenta-violet.css"
             ],
             "scripts": []
           },

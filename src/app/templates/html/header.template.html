@@ -1,7 +1,20 @@
-<h1>{{title}}</h1>
-<mat-list role="list">
-  <mat-list-item role="listitem">Item 1</mat-list-item>
-  <mat-list-item role="listitem">Item 2</mat-list-item>
-  <mat-list-item role="listitem">Item 3</mat-list-item>
-  <mat-list-item role="listitem">Item 3</mat-list-item>
-</mat-list>
+<mat-toolbar>
+    <div class="menu-toolbar">
+        <button mat-icon-button >
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+        <h1>  
+            <a href="http://localhost:4200">{{title}}</a>
+        </h1>    
+    </div>
+    <div class="login-toolbar">
+        <a mat-button href="/login" class="login-link">Login</a>
+        <button mat-flat-button [matMenuTriggerFor]="login">
+            <span class="material-symbols-outlined">account_circle</span>
+        </button>        
+        <mat-menu #login="matMenu">
+            <button mat-menu-item>register</button>
+            <button mat-menu-item>login</button>
+        </mat-menu>
+    </div>
+</mat-toolbar>
