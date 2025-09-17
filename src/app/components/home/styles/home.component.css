@@ -7,7 +7,7 @@
 :host section.header-home mat-card   {
     background-color: var(--mat-sys-on-primary);
     border-top: none;
-    height: 400px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +34,7 @@
 }
 
 :host section.list-benefits {
-    margin-block: 100px;
+    margin-block: 150px;
     padding-inline: 5%;  
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 1fr));

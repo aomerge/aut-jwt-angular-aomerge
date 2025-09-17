@@ -1,5 +1,5 @@
 export class TemplateConfig {
-    private static title = 'aut-jwt';
+    private static title = 'DocxCloud';
 
     public static getTitle() {
         return this.title;
